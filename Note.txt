@@ -22,6 +22,29 @@ git push origin master
 git checkout -b adenecheau/fixMerge
 git add .
 git commit -m "fix: fixes #1"
-git checkout -b release/0.1.0
+git checkout -b release/0.1.1
 git checkout master 
-git merge release/0.1.0
+git merge release/0.1.1
+git push origin master
+
+git tag -a v0.1.1 -m "version 0.1.1"
+git push origin v0.1.1
+
+5. Suppression des branches
+git branch -d adenecheau/fixIssue
+git branch -d adenecheau/fixMerge
+
+6. Resume
+git checkout -b adenecheau/fixResume
+git add .
+git commit -m "fixes #2 : resume"
+git push origin adenecheau/fixResume
+
+> Creation d'une PR pour accord avant le merge
+
+git checkout master
+git merge adenecheau/fixResume
+git push origin master
+git tag -a v0.1.2 -m "version 0.1.2"
+git push origin v0.1.2
+git branch -d adenecheau/fixResume
