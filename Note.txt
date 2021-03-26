@@ -1,8 +1,14 @@
 > définitiion des commandes git
 
-1. 
+1. Initialisation du projet
 git add .
 git commit -m ":rocket: intialisation du projet"
 git branch -M master
 git remote add origin https://github.com/anthonydenecheau/gitProject.git
 git push -u origin master
+
+2. Création d'une issue et d'une branche pour résolution
+git checkout -b adenecheau/fixIssue
+git add .
+git commit -m "fix: update my first issue"
+git push origin adenecheau/fixIssue
