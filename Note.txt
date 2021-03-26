@@ -50,3 +50,5 @@ git push origin v0.1.2
 git branch -d adenecheau/fixResume
 
 > Ceci est un test pour resynchroniser la branche locale
+
+git log --graph --oneline --decorate --date-order --full-history
