@@ -12,3 +12,16 @@ git checkout -b adenecheau/fixIssue
 git add .
 git commit -m "fix: update my first issue"
 git push origin adenecheau/fixIssue
+
+3. Merge s/ la branch master
+git checkout master
+git merge adenecheau/fixIssue
+git push origin master
+
+4. Résolution d'une release
+git checkout -b adenecheau/fixMerge
+git add .
+git commit -m "fix: fixes #1"
+git checkout -b release/0.1.0
+git checkout master 
+git merge release/0.1.0
